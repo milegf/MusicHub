@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="static/style/style.css">
 </head>
-<body>
-    
+
+<body class="fondo-home">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="static/img/logo.svg" alt="logo" class="logo-img">
+                <a class="navbar-brand bold-label" href="#">MusicHub</a>
+                <label for="" class="italic-label">Conecta con tu música favorita</label>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="explorar.html">Explorar música</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">                        
+                        <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="index.html">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CARDS DE POSTEOS -->
+        <div class="cards-container">
+            <!-- POST 1 -->
+            <div class="card" style="width: 288px">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <img src="static/img/fp1.jpeg" alt="Perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                <span><strong>user1</strong> <span style="color: #888; font-size: 0.9em;">Hace 2h</span></span>
+                </div>
+                <img src="static/img/card2.jpg" class="card-img-top" alt="Imagen de ejemplo">
+                <div class="card-body">
+                    <h5 class="card-title">Rumours</h5>
+                    <h6>#FleetwoodMac</h6>
+                    <p class="card-text">Undécimo álbum de estudio publicado en 1977 por Warner Bros Records.</p>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-heart"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-play"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-three-dots"></i> </a>
+                </div>
+            </div>
+            <!-- POST 2 -->
+            <div class="card" style="width: 288px">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <img src="static/img/fp2.jpeg" alt="Perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                <span><strong>user2</strong> <span style="color: #888; font-size: 0.9em;">Hace 4h</span></span>
+                </div>
+                <img src="static/img/card1.jpg" class="card-img-top" alt="Imagen de ejemplo">
+                <div class="card-body">
+                    <h5 class="card-title">Coming Home</h5>
+                    <h6>#LeonBridges</h6>
+                    <p class="card-text">Álbum debut lanzado el 23 de junio de 2015 por Columbia.</p>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-heart"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-play"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-three-dots"></i> </a>
+                </div>
+            </div>
+            <!-- POST 3 -->
+            <div class="card" style="width: 288px">
+                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <img src="static/img/fp3.jpeg" alt="Perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                <span><strong>user3</strong> <span style="color: #888; font-size: 0.9em;">Hace 5h</span></span>
+                </div>
+                <img src="static/img/card3.jpg" class="card-img-top" alt="Imagen de ejemplo">
+                <div class="card-body">
+                    <h5 class="card-title">Nectar</h5>
+                    <h6>#Joji</h6>
+                    <p class="card-text">Segundo álbum de estudio lanzado el 25 de septiembre de 2020 a través de la disquera 88rising.</p>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-heart"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-play"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-three-dots"></i> </a>
+                </div>
+            </div>
+            <!-- POST 4 -->
+            <div class="card" style="width: 288px">
+                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                <img src="static/img/fp4.jpeg" alt="Perfil" style="width: 40px; height: 40px; border-radius: 50%;">
+                <span><strong>user4</strong> <span style="color: #888; font-size: 0.9em;">Hace 5h</span></span>
+                </div>
+                <img src="static/img/card4.jpg" class="card-img-top" alt="Imagen de ejemplo">
+                <div class="card-body">
+                    <h5 class="card-title">Private Music</h5>
+                    <h6>#Deftones</h6>
+                    <p class="card-text">Décimo álbum. Lanzamiento previsto para el 22 de agosto de 2025 por Reprise Records y Warner Records.​​</p>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-heart"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-play"></i> </a>
+                    <a href="#" class="btn btn-primary"> <i class="bi bi-three-dots"></i> </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
