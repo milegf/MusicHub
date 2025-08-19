@@ -9,7 +9,15 @@
 
 .fondo-home{
     background-color: #161616;
-    background-image: url('../img/fondo_home2.jpg');
+    background-image: url('../img/fondo_home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fondo-explorar{
+    background-color: #161616;
+    background-image: url('../img/fondo_explorar.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
