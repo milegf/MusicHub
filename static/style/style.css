@@ -1,5 +1,5 @@
-/* FONDO BODY */
-body {
+/* FONDOS BODY */
+.fondo-index{
     background-color: #f8f9fa;
     background-image: url('../img/fondo_login.jpg');
     background-size: cover;
@@ -7,8 +7,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.bg-card {
-    background-color: #6c63ff;
+.fondo-home{
+    background-color: #161616;
+    background-image: url('../img/fondo_home2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* ESTILOS TEXTO */
@@ -20,8 +24,27 @@ body {
     font-style: italic;
 }
 
-/* DIMENSIONES IMAGEN */
+/* DIMENSIONES LOGO */
 .logo-img {
     height: 30px;
     vertical-align: middle;
 }
+
+/* POSTS */
+.cards-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card-post{
+    border-radius: 12px; 
+    overflow: hidden;}
+
+.btn-primary{
+    background-color: #6c63ff;
+    border: none;
+}
+
