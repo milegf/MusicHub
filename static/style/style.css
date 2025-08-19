@@ -1,0 +1,27 @@
+/* FONDO BODY */
+body {
+    background-color: #f8f9fa;
+    background-image: url('../img/fondo_login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-card {
+    background-color: #6c63ff;
+}
+
+/* ESTILOS TEXTO */
+.bold-label {
+    font-weight: bold;
+}
+
+.italic-label {
+    font-style: italic;
+}
+
+/* DIMENSIONES IMAGEN */
+.logo-img {
+    height: 30px;
+    vertical-align: middle;
+}
