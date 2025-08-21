@@ -30,6 +30,8 @@ else {
 let usuario = document.getElementById("usuarioInput")
 console.log(usuario)
 */
+
+/*
 let datosAdmin ={
     "nombreCompleto": "Milenka Guerra",
     "usuario": "mile",
@@ -67,4 +69,60 @@ function datosUsuario(){
     }
 }
 
+*/
 
+
+function registroUsuario(){
+    let nombre = document.getElementById("valNombre").value
+    let apellido = document.getElementById("valApellido").value
+    let usuario = document.getElementById("valUsuario").value
+    let correo = document.getElementById("valEmail").value
+    let psswd = document.getElementById("valPassword").value
+    let psswd2 = document.getElementById("valPassword2").value
+    let existe = false
+    let users = JSON.parse(localStorage.getItem("usuarios")) || []
+
+    for (let i = 0 ; i < users.length; i++){
+        if (users[i].correo === correo){
+            existe = true
+            break
+        }
+    }
+
+    if (nombre == "" || apellido == "" || usuario == "" || correo == "" || psswd == ""){
+        alert("No puede tener campos vacíos.")
+    }
+    else if (psswd != psswd2){
+        alert("Las contraseñas no coinciden.")
+    } else if (existe) {
+        alert("El correo ya está registrado.")
+    } else {
+        users.push({nombre, apellido, usuario, correo, psswd})
+        localStorage.setItem("usuarios", JSON.stringify(users))
+        alert("Se ha registrado con éxito")
+        window.location.href="index.html"
+    }
+}
+
+function login(){
+    let usuario = document.getElementById("usuarioInput").value
+    let psswd = document.getElementById("passwordInput").value
+
+    for (let i = 0 ; i < users.length; i++){
+        if (users[i].usuario === usuario){
+            usuarioLogin = users[i]
+            break
+        }
+    }
+
+    if (usuario == "" || psswd == ""){
+        alert("No puede tener datos vacíos.")
+    }
+    else if (usuarioLogin.usuario === usuario && usuarioLogin.password === psswd){
+        localStorage.setItem("datosUsuario", JSON.stringify(usuarioLogueado))
+        window.location.href="home.html"
+    } else {
+        alert("Usuario o contraseña incorrectos.")
+    }
+    
+}
