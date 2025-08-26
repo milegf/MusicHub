@@ -1,3 +1,5 @@
+import {sumar} from './funciones.js'
+
 /*
 let nombre = "Milenka"
 let num1 = 123
@@ -71,7 +73,6 @@ function datosUsuario(){
 
 */
 
-
 function registroUsuario(){
     let nombre = document.getElementById("valNombre").value
     let apellido = document.getElementById("valApellido").value
@@ -124,5 +125,23 @@ function login(){
     } else {
         alert("Usuario o contraseña incorrectos.")
     }
-    
 }
+    
+let datosAdmin = {
+    "nombreCompleto": "Milenka Guerra",
+    "usuario": "mile",
+    "password": "mile123ñ",
+    "estado": true
+}
+
+console.log(datosAdmin.nombreCompleto)
+
+// destructuring
+const {nombreCompleto, usuario, password, estado} = datosAdmin
+
+// const [] = nombreLista
+
+// Funciones de otro archivo
+sumar(1,10)
+
+
